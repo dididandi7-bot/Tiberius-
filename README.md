@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tiberius Store
 
 Katalog dan keranjang belanja Tiberius Store dibuat dengan HTML, CSS, dan JavaScript native. Tidak menggunakan framework, library UI, backend, atau proses build.
@@ -37,3 +38,6 @@ npm run package
 Paket runtime dibuat di `artifacts/tiberius-store.zip`. Hanya HTML, CSS, JavaScript, dan aset gambar yang dibutuhkan yang disertakan.
 
 Panduan proyek: [instruction.md](instruction.md), [prd.md](prd.md), [tech_stack.md](tech_stack.md), [arsitektur.md](arsitektur.md), [ui.ux.md](ui.ux.md), dan [verification.md](verification.md).
+=======
+# Tiberius-
+>>>>>>> 47aa14f3ff901ead8f5786a8120d3c3a7c231d56
