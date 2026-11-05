@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Tiberius Store — katalog konsol PS5, controller, TV gaming, dan game original. Temukan gear gaming pilihanmu.">
+  <title>Tiberius Store — Level up your play</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Tiberius Store, beranda"><span class="brand-mark" aria-hidden="true">T<span>.</span></span><span>TIBERIUS<span class="brand-sub">GAMING STORE</span></span></a>
+      <nav aria-label="Navigasi utama"><a href="#katalog">Katalog</a><a href="#keunggulan">Kenapa kami</a><a href="#faq">FAQ</a></nav>
+      <a class="cart-link" href="#keranjang"><span aria-hidden="true">▣</span><span>Keranjang</span><span id="cart-count" class="count">0</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="beranda" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> YOUR NEXT LEVEL STARTS HERE</p>
+        <h1 id="hero-title">Gear up.<br><span>Game on.</span></h1>
+        <p class="hero-description">Upgrade setup-mu dengan konsol PS5, controller, TV gaming, dan game original pilihan. Temukan gear favorit, cek harga, lalu pesan dengan mudah.</p>
+        <div class="hero-actions"><a class="button" href="#katalog">Jelajahi katalog <span aria-hidden="true">↘</span></a><a class="text-link" href="#keunggulan">Kenali Tiberius <span aria-hidden="true">→</span></a></div>
+        <div class="hero-notes"><span><span aria-hidden="true">✦</span> Pilihan untuk semua gamer</span><span><span aria-hidden="true">✦</span> Konsol sampai game</span><span><span aria-hidden="true">✦</span> Tanya stok via WhatsApp</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi konsol, controller, dan game gaming" role="img">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-console"><span></span><i></i></div>
+        <div class="hero-controller"><span>✣</span><b>＋</b><i>●</i></div>
+        <div class="hero-disc">NEXT<br>LEVEL</div>
+        <div class="hero-art-label"><span>EST. FOR GAMERS</span><strong>PLAY<br>WITHOUT<br>LIMITS<span>.</span></strong></div>
+        <div class="hero-art-index">TS—001 / 2026</div>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Kategori produk"><div class="container ticker-inner"><span>PLAYSTATION 5</span><i>✳</i><span>CONTROLLER</span><i>✳</i><span>GAMING TV</span><i>✳</i><span>ORIGINAL GAMES</span><i>✳</i><span>LEVEL UP</span></div></div>
+    <section class="container catalog-section" id="katalog" aria-labelledby="catalog-heading">
+      <div class="section-heading"><div><p class="eyebrow">PILIHAN TIBERIUS</p><h2 id="catalog-heading">Ready, set, <span>play.</span></h2></div><p>Setup impianmu dimulai dari gear yang tepat.<br>Jelajahi koleksi dan temukan pilihanmu.</p></div>
+      <p class="demo-note"><span aria-hidden="true">ⓘ</span> Katalog dan harga merupakan contoh tampilan. Konfirmasi harga, keaslian produk, dan ketersediaan kepada toko sebelum pemesanan.</p>
+      <div class="shop-layout">
+        <div class="catalog-content">
+          <div class="catalog-toolbar"><div class="search-wrap"><label class="sr-only" for="search">Cari produk</label><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Cari konsol, controller, game…" autocomplete="off"></div><span id="result-count" class="result-count" role="status">20 produk</span></div>
+          <div id="category-filters" class="filters" role="group" aria-label="Filter kategori"></div>
+          <div id="product-grid" class="product-grid"></div>
+          <div id="no-results" class="empty-results" hidden><h3>Produk belum ditemukan</h3><p>Coba kata kunci lain atau tampilkan semua kategori.</p><button id="reset-filters" class="button secondary" type="button">Reset pencarian & filter</button></div>
+          <noscript><p class="notice">Aktifkan JavaScript untuk melihat katalog dan menggunakan keranjang. Hubungi toko untuk informasi produk.</p></noscript>
+        </div>
+        <aside class="cart-panel" id="keranjang" aria-labelledby="cart-heading">
+          <div class="cart-title"><div><p class="eyebrow">YOUR PICKS</p><h2 id="cart-heading" tabindex="-1">Keranjang</h2></div><span class="cart-symbol" aria-hidden="true">↗</span></div>
+          <p class="subtle">Satu langkah lebih dekat ke setup baru.</p>
+          <div id="cart-empty" class="cart-empty"><span class="empty-bag" aria-hidden="true">▱</span><p>Keranjangmu masih kosong.</p><span>Tambahkan produk untuk mulai belanja.</span><a href="#product-grid" class="text-link">Jelajahi produk →</a></div>
+          <div id="cart-items"></div>
+          <div class="estimate-box"><div class="total-row"><span>Total belanja</span><strong id="cart-total">Rp0</strong></div><p id="estimate-help">Pilih produk untuk melihat total.</p></div>
+          <form id="order-form" novalidate>
+            <fieldset><legend>Kontak pemesan</legend>
+              <div class="field"><label for="customer-name">Nama lengkap</label><input id="customer-name" type="text" autocomplete="name" minlength="2" maxlength="80" placeholder="Nama kamu" required aria-describedby="customer-name-error"><p id="customer-name-error" class="field-error"></p></div>
+              <div class="field"><label for="customer-phone">Nomor WhatsApp</label><input id="customer-phone" type="tel" autocomplete="tel" placeholder="08… atau 62…" required aria-describedby="phone-help customer-phone-error"><p id="phone-help" class="help">Untuk konfirmasi pesanan oleh toko.</p><p id="customer-phone-error" class="field-error"></p></div>
+            </fieldset>
+            <p id="form-error" class="field-error" role="alert"></p>
+            <button id="review-button" class="button full" type="submit" disabled>Periksa pesanan <span aria-hidden="true">→</span></button>
+          </form>
+          <section id="review-panel" class="review-panel" hidden aria-labelledby="review-heading"><h3 id="review-heading" tabindex="-1">Ringkasan pesanan</h3><dl id="review-contact"></dl><ul id="review-lines"></ul><p class="review-total" id="review-total"></p><button id="edit-request" class="text-link" type="button">← Ubah pesanan</button><p class="help">Kontak dan rincian produk akan dimasukkan ke draf WhatsApp. Kamu masih perlu mengirim pesan untuk meminta konfirmasi.</p><a id="whatsapp-button" class="button full" href="#keranjang" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1" aria-label="Checkout via WhatsApp setelah memeriksa ringkasan">Checkout via WhatsApp <span aria-hidden="true">↗</span></a></section>
+          <p id="unavailable-note" class="availability-note">Pemesanan WhatsApp belum diaktifkan. Kamu tetap dapat menyusun keranjang; hubungi toko setelah nomor resminya tersedia.</p>
+          <p class="cart-footnote">Harga dan stok dapat berubah. Toko akan mengonfirmasi rincian sebelum transaksi.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="keunggulan" class="how-section" aria-labelledby="how-heading"><div class="container"><div class="section-heading"><div><p class="eyebrow">BUILT FOR YOUR NEXT GAME</p><h2 id="how-heading">Semua gear. Satu <span>tujuan.</span></h2></div><p>Temukan perangkat dan game<br>untuk pengalaman bermainmu.</p></div><ol class="steps"><li><span class="step-number">01 / CONSOLE</span><h3>Mulai dari konsol</h3><p>Pilih PS5 yang sesuai dengan kebutuhan bermain dan setup ruangmu.</p></li><li><span class="step-number">02 / COMPLETE</span><h3>Lengkapi setup</h3><p>Tambahkan controller ekstra atau TV gaming untuk pengalaman lebih imersif.</p></li><li><span class="step-number">03 / PLAY</span><h3>Pilih game favorit</h3><p>Jelajahi rilisan game dan susun pesananmu untuk dikonfirmasi toko.</p></li></ol></div></section>
+    <section class="container faq-section" id="faq" aria-labelledby="faq-heading"><div><p class="eyebrow">GOOD TO KNOW</p><h2 id="faq-heading">Sebelum kamu<br>mulai bermain.</h2><p class="subtle">Informasi penting seputar katalog dan pemesanan.</p></div><div class="faq-list"><details><summary>Apakah harga pada katalog sudah pasti?</summary><p>Belum. Harga pada versi ini adalah contoh untuk demonstrasi. Silakan konfirmasi harga terbaru langsung kepada toko sebelum melakukan pembelian.</p></details><details><summary>Apakah semua produk tersedia?</summary><p>Katalog tidak menampilkan stok real-time. Toko akan mengonfirmasi ketersediaan setelah menerima pertanyaan atau pesanan.</p></details><details><summary>Apakah game dan perangkat original?</summary><p>Tiberius Gaming berfokus pada produk gaming original. Pastikan keaslian, kondisi, garansi, dan kelengkapan barang dikonfirmasi kepada toko sebelum transaksi.</p></details><details><summary>Bagaimana cara memesan?</summary><p>Tambahkan produk ke keranjang, isi kontak, lalu periksa ringkasannya. Jika nomor toko sudah dikonfigurasi, website akan membuka draf pesan WhatsApp. Kamu perlu menekan kirim sendiri.</p></details><details><summary>Apakah pesanan langsung terkonfirmasi?</summary><p>Tidak. Website ini tidak memproses pembayaran atau reservasi. Toko perlu mengonfirmasi stok, harga, garansi, dan cara transaksi secara manual.</p></details><details><summary>Apakah data kontak disimpan?</summary><p>Nama dan nomor kontak hanya digunakan untuk membuat draf pesan di browser dan tidak disimpan di localStorage. Keranjang produk disimpan di browser yang sama jika diizinkan.</p></details></div></section>
+    <section class="container contact-section" id="kontak" aria-labelledby="contact-heading"><div class="contact-mark" aria-hidden="true">T<span>.</span></div><div><p class="eyebrow">TIBERIUS GAMING</p><h2 id="contact-heading">Your game. Your rules.</h2><p id="business-contact">Informasi kontak toko akan tersedia setelah dikonfirmasi pengelola.</p></div><a class="button light" href="#katalog">Lihat katalog <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="container site-footer"><a class="brand footer-brand" href="#beranda"><span class="brand-mark" aria-hidden="true">T<span>.</span></span><span>TIBERIUS<span class="brand-sub">GAMING STORE</span></span></a><p>Play bold. Play Tiberius.</p><span>© <span id="year">2026</span> Tiberius Store · Harga contoh</span></footer>
+  <div id="status-message" class="toast" role="status" aria-live="polite"></div>
+  <p id="storage-warning" class="storage-warning" role="status" hidden>Keranjang dapat digunakan, tetapi belum bisa disimpan pada browser ini.</p>
+  <a id="floating-whatsapp" class="floating-whatsapp" href="#kontak" target="_blank" rel="noopener noreferrer" aria-label="Tanya soal katalog via WhatsApp (membuka tab baru)">Tanya katalog <span aria-hidden="true">↗</span></a>
+</body>
+</html>

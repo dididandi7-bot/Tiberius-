@@ -1,0 +1,11 @@
+{
+  "name": "tiberius-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Katalog dan keranjang belanja statis Tiberius Store",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "package": "python3 scripts/package_site.py"
+  }
+}
